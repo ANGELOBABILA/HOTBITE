@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOT BITE | Where Taste Meets Elegance 😋</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6c1f3fdb5a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <h2>🔥 HOT BITE</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+
+            <button id="darkModeBtn">
+                🌙
+            </button>
+
+            <button id="favoriteBtn">
+                ❤️ <span id="favoriteCount">0</span>
+            </button>
+
+            <button id="cartBtn">
+                🛒 <span id="cartCount">0</span>
+            </button>
+
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>Where Taste Meets Elegance 😋</h1>
+
+            <p>
+                Enjoy delicious meals, refreshing drinks,
+                desserts and more from HOT BITE.
+                Order instantly and have a luxurious dining experience.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="btn primary-btn">
+                    Order Now
+                </a>
+
+                <a href="#about" class="btn secondary-btn">
+                    Learn More
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURED SECTION -->
+    <section id="featured" class="section">
+
+        <div class="section-title">
+            <h2>🔥 Featured Dishes</h2>
+            <p>Our most loved meals</p>
+        </div>
+
+        <div class="featured-grid">
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1518492104633-130d0cc84637?w=800"
+                    alt="Chicken">
+                <h3>Grilled Chicken</h3>
+                <p>Juicy grilled chicken with premium spices.</p>
+                <h4>5,000 XAF</h4>
+            </div>
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800"
+                    alt="Rice">
+                <h3>Jollof Rice</h3>
+                <p>Rich flavor and unforgettable taste.</p>
+                <h4>3,500 XAF</h4>
+            </div>
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800"
+                    alt="Burger">
+                <h3>Burger Deluxe</h3>
+                <p>Luxury burger prepared fresh daily.</p>
+                <h4>4,000 XAF</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section">
+
+        <div class="section-title">
+            <h2>🍽 Our Menu</h2>
+            <p>Explore our delicious menu</p>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search food...">
+        </div>
+
+        <!-- FILTER BUTTONS -->
+        <div class="filter-buttons">
+
+            <button class="filter-btn active"
+                data-category="all">
+                All
+            </button>
+
+            <button class="filter-btn"
+                data-category="breakfast">
+                Breakfast
+            </button>
+
+            <button class="filter-btn"
+                data-category="dinner">
+                Dinner
+            </button>
+
+            <button class="filter-btn"
+                data-category="drinks">
+                Drinks
+            </button>
+
+            <button class="filter-btn"
+                data-category="desserts">
+                Desserts
+            </button>
+
+            <button class="filter-btn"
+                data-category="others">
+                Others
+            </button>
+
+        </div>
+
+        <div class="menu-grid">
+
+            <!-- ITEM 1 -->
+            <div class="food-card menu-item"
+                data-category="dinner">
+
+                <img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=800"
+                    alt="Chicken">
+
+                <h3>Grilled Chicken</h3>
+
+                <p>
+                    Premium grilled chicken served hot.
+                </p>
+
+                <h4>5,000 XAF</h4>
+
+                <div class="card-buttons">
+
+                    <button
+                        class="favorite-btn"
+                        data-name="Grilled Chicken">
+                        ❤️
+                    </button>
+
+                    <button
+                        class="add-cart"
+                        data-name="Grilled Chicken"
+                        data-price="5000">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="food-card menu-item"
+                data-category="dinner">
+
+                <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800"
+                    alt="Rice">
+
+                <h3>Jollof Rice</h3>
+
+                <p>
+                    Rich African style jollof rice.
+                </p>
+
+                <h4>3,500 XAF</h4>
+
+                <div class="card-buttons">
+
+                    <button
+                        class="favorite-btn"
+                        data-name="Jollof Rice">
+                        ❤️
+                    </button>
+
+                    <button
+                        class="add-cart"
+                        data-name="Jollof Rice"
+                        data-price="3500">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="food-card menu-item"
+                data-category="others">
+
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800"
+                    alt="Burger">
+
+                <h3>Burger Deluxe</h3>
+
+                <p>
+                    Soft bun with delicious filling.
+                </p>
+
+                <h4>4,000 XAF</h4>
+
+                <div class="card-buttons">
+
+                    <button
+                        class="favorite-btn"
+                        data-name="Burger Deluxe">
+                        ❤️
+                    </button>
+
+                    <button
+                        class="add-cart"
+                        data-name="Burger Deluxe"
+                        data-price="4000">
+                        Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CART -->
+    <section class="section">
+
+        <div class="section-title">
+            <h2>🛒 Cart & Checkout</h2>
+        </div>
+
+        <div class="cart-container">
+
+            <div id="cartItems"></div>
+
+            <h3>
+                Total:
+                <span id="totalPrice">
+                    0
+                </span>
+                XAF
+            </h3>
+
+            <button id="checkoutBtn">
+                Checkout via WhatsApp
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+
+        <div class="section-title">
+            <h2>📸 Food Gallery</h2>
+        </div>
+
+        <div class="gallery-grid">
+
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800">
+            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=800">
+            <img src="https://media.istockphoto.com/id/1276898087/photo/egusi-soup-in-a-white-plate-on-white-background-flatly-view.jpg?s=612x612&w=0&k=20&c=JbBAmbRjKvnccIS01UmbAkRbrTrM-afGjRHmbj6_-EQ=">
+            <img src="https://media.istockphoto.com/id/1044330750/photo/grilled-chicken-with-mushrooms-and-potatoes-close-up-in-a-baking-dish-horizontal.jpg?s=612x612&w=0&k=20&c=ASNpA20HtIs1zTy1K-ny1T-U5-zhclY_scYLByX68oM="
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+
+        <div class="section-title">
+            <h2>🏢 About HOT BITE</h2>
+        </div>
+
+        <div class="about-content">
+
+            <p>
+                HOT BITE is located at Veterinary Junction,
+                Bamenda. We are dedicated to delivering
+                delicious meals with premium quality service.
+            </p>
+
+            <p>
+                Whether you are looking for breakfast,
+                dinner, desserts or drinks,
+                HOT BITE guarantees an unforgettable experience.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section">
+
+        <div class="section-title">
+            <h2>⭐ Customer Reviews</h2>
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+                <h3>⭐⭐⭐⭐⭐</h3>
+                <p>
+                    Amazing food and excellent service.
+                </p>
+            </div>
+
+            <div class="testimonial-card">
+                <h3>⭐⭐⭐⭐⭐</h3>
+                <p>
+                    Best restaurant experience in Bamenda.
+                </p>
+            </div>
+
+            <div class="testimonial-card">
+                <h3>⭐⭐⭐⭐⭐</h3>
+                <p>
+                    Highly recommended.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+
+        <div class="section-title">
+            <h2>📞 Contact Us</h2>
+        </div>
+
+        <div class="contact-box">
+
+            <p>
+                📍 Veterinary Junction, Bamenda
+            </p>
+
+            <p>
+                ☎️ 654330027
+            </p>
+
+            <p>
+                📧 angelobabila24@gmail.com
+            </p>
+
+            <p>
+                🕒 7:00 AM - 10:00 PM WAT
+            </p>
+
+            <iframe
+                src="https://maps.google.com/maps?q=bamenda&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>🔥 HOT BITE</h3>
+
+        <p>
+            Where Taste Meets Elegance 😋
+        </p>
+
+        <p>
+            © 2026 HOT BITE. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
